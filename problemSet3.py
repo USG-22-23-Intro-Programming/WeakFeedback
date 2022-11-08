@@ -24,8 +24,8 @@ def currencyConverter():
     getRate = forwantcurr.get(wantcurr)
     rate2 = float(end2.get(getRate))
     final = USD * rate2
-    curr = 
-    print("You have " + final + " " + curr + "s")
+    curr = str(forusercurr.get(wantcurr))
+    print("You have " + str(final) + " in " + curr)
 
 
 
@@ -112,8 +112,8 @@ def groceryList(sample):
 
 def main():
     currencyConverter()
-    #L = ["apple", "banana", "spinach", "banana"]
-    #groceryList(L)
+    L = ["apple", "banana", "spinach", "banana"]
+    groceryList(L)
 
 if __name__ == "__main__":
     main()
